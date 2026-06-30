@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 0px;
 }
 /* Buy now button */
 .buy-now-btn {
@@ -37,8 +38,8 @@ body {
   position: sticky;
   top: 0;
   background: #fff;
-  padding: 20px 60px;
-  border-radius: 15px;
+  padding: 15px 60px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,9 +55,6 @@ body {
   font-weight: 700;
   color: #333;
   margin-left: -20px;
-}
-.logo span {
-  color: #ff4d4d;
 }
 .nav-links {
   list-style: none;
@@ -85,7 +83,8 @@ body {
   bottom: -5px;
   width: 0;
   height: 2px;
-  transition: width 0.3s ease;
+  background: #ff4d4d; /* orange underline */
+  transition: width 0s ease;
 }
 .buy-btn {
   background: #222 !important;
@@ -106,14 +105,14 @@ body {
   background: #061d29;
   color: #fff;
   text-align: center;
-  padding: 160px 20px 280px; /* extra bottom padding for overlap */
+  padding: 150px 20px 280px; /* extra bottom padding for overlap */
   position: relative;
   overflow:hidden;
 }
 .hero h1 {
   font-size: 80px; /* larger text */
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.2;
   margin-bottom: 20px;
   margin-top: -80px;  
 }
@@ -127,34 +126,6 @@ body {
   margin-bottom: 50px;
   margin-top: 5px;
 }
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: -30px;
-}
-.hero-buttons button {
-  background: #fff;
-  color: #111;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 24px;
-  font-weight: 100;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-.hero-buttons button:hover {
-  background: #00d4ff;
-  color: #fff;
-}
-.hero-image {
-  width: 80%;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  margin-top: 40px;
-  position: relative;
-  z-index: 2;
-}
 .react-btn{
 margin-top: -30px;
 }
@@ -166,7 +137,7 @@ margin-top: -30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 0px;
 }
 /* Common button style */
 .btn-white button {
@@ -176,7 +147,7 @@ margin-top: -30px;
   padding: 8px 15px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -186,16 +157,8 @@ margin-top: -30px;
   transform: translateY(-3px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
-/* Icon styling */
-.btn-white img {
-  width: 22px;
-  height: 22px;
-}
 /* Remove underline from link buttons */
 .btn-white {
-  text-decoration: none;
-}
-.btn-white:hover {
   text-decoration: none;
 }
 /* Text styling */
@@ -204,12 +167,10 @@ margin-top: -30px;
   font-weight: 500;
   color: #111;
 }
-/* Optional: make NextJs logo dark circle look consistent */
-/* Make React and NextJs icons larger */
 .react-btn img,
 .js-btn img {
-  width: 28px;   /* increase icon size */
-  height: 28px;  /* keep proportions */
+  width: 26px;   /* increase icon size */
+  height: 26px;  /* keep proportions */
   vertical-align: middle; /* keeps text aligned */
   transition: transform 0.2s ease;
 }
@@ -218,13 +179,11 @@ margin-top: -30px;
 .js-btn:hover img {
   transform: scale(1.1);
 }
-.me-1{
-    width: 30px;
-}
+
 .banner-img {
   position: relative;
   overflow:visible;
-  margin-top: 70px; /* moves image upward to overlap dark section */
+  margin-top: 60px; /* moves image upward to overlap dark section */
   text-align: center;
   padding-bottom: 0;
   background: #061d29;
@@ -232,7 +191,7 @@ margin-top: -30px;
 /* Dashboard image */
 .banner-main-img {
   width: 80%;
-  max-width: 900px !important;
+  max-width: 860px !important;
   border-radius: 10px;
   position: relative;
   z-index: 3;
@@ -245,27 +204,27 @@ position: relative;
 /* Left background shape */
 .banner-bg-04 {
   position: absolute;
-  left: 9%;
-  top: 60.7%;
+  left: 11%;
+  top: 59%;
   transform: translateY(-40%);
-  width: 270px;
+  width: 250px;
   
   z-index: 1;
 }
 /* Right background shape */
 .banner-bg-03 {
   position: absolute;
-  right: 9%;
-  top: 60.3%;
+  right: 11%;
+  top: 59%;
   transform: translateY(-40%);
-  width: 270px;
+  width: 250px;
   z-index: 1;
 }
 /* React icon positioning */
 .banner-icon-1 {
   position: absolute;
-  right: 16.5%;
-  top: -7%;
+  right: 17.8%;
+  top: -8%;
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -275,7 +234,7 @@ position: relative;
 /* Floating animation */
 @keyframes floating-y {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-25px); }
+  50% { transform: translateY(-18px); }
   100% { transform: translateY(0); }
 }
 .floating-y {
@@ -289,11 +248,11 @@ position: relative;
 }
 .banner-bg-01 {
   left: 150px;
-  top: 110px;
+  top: 90px;
 }
 .banner-bg-02 {
   right: 160px;
-  top: 110px;
+  top: 90px;
 }
 /*overview section*/
 .overview{
@@ -364,9 +323,9 @@ position: relative;
 }
 .card {
   width: 304px;
-  border: 0.5px solid #d1d5db;
+  border: 0.5px solid #e0e0e0;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+ 
   transition: transform 0.3s ease;
   background: #fff;
   text-align: center;
@@ -417,7 +376,7 @@ position: relative;
 .use-case {
   background-color: #fff;
   text-align: center;
-  padding: 80px 20px 60px;
+  padding: 75px 20px 60px;
   position: relative;
   margin-top: -70px;
 }
@@ -472,7 +431,7 @@ position: relative;
   padding: 20px;
   display: block;
   margin: 0 auto 20px auto;
-  background-color: #f7f7f7;   /* lighter faint grey */
+  background-color: #f8f9fa;  /* lighter faint grey */
   border-radius: 12px;         /* smooth rounded corners */
   padding: 15px;               /* space around the icon */
 }
@@ -488,13 +447,15 @@ position: relative;
   line-height: 1.6;
 }
 .usecase-buttons button {
+
   border: none;
   border-radius: 6px;
   font-weight: 600;
   color: #fff;
-  padding: 12px 28px;
+  padding: 12px 15px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-right: 5px;
 }
 /* Left button (Live Demo) */
 .demo-btn {
@@ -513,16 +474,16 @@ position: relative;
 /* Icon styling */
 .usecase-buttons i {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   vertical-align: middle;
-  margin-right: 6px;
+  margin-right: 4px;
 }
 /*demos section*/
 .demos-section {
   background-color: #212529; /* dark background */
   color: #fff;
   text-align: center;
-  padding: 80px 20px 30px;
+  padding: 60px 20px 30px;
   position: relative;
   min-height: 800px;
   overflow: visible;
@@ -533,29 +494,30 @@ position: relative;
   margin-bottom: 10px;
   position: relative;
   display: inline-block;
+  font-size: 14px;
 }
 .demos-title::before,
 .demos-title::after {
   content: "";
   position: absolute;
-  bottom: -6px;
-  height: 2px;
+  bottom: -5px;
+  height: 1.5px;
   background-color: #fff;
 }
 .demos-title::before {
-  right: 10%;
+  right: 31%;
   transform: translateX(-120%);
-  width: 23px;
+  width: 15px;
 }
 .demos-title::after {
-  left: 24%;
+  left: 22%;
   transform: translateX(20%);
-  width: 35px;
+  width: 31px;
 }
 .demos-section h2 {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .demos-buttons {
   display: flex;
@@ -734,7 +696,7 @@ border-radius: 2px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 60px;
+  gap: 71px;
 }
 
 /* Left side text */
@@ -858,6 +820,10 @@ border-radius: 2px;
   font-weight: 500;
   font-style: sans-serif;
 }
+.ti-rectangle-vertical {
+  font-size: 14px; /* make it smaller */
+}
+
 /* Background decorative images */
 .stats-bg-left {
   position: absolute;
@@ -962,6 +928,7 @@ input[type="radio"] {
 .ip-card h4 i {
   font-size: 18px;             /* match text size */
   color: #061d29;
+  font-weight: lighter;
 }
 
 .ip-card img {
@@ -1408,7 +1375,7 @@ border-radius: 2px;
 
 .faq-section {
  text-align: center;
-  padding: 40px 50px 80px;
+  padding: 40px 0px 80px;
   background-color: #fff !important;
   position:relative;
 }
@@ -1420,7 +1387,7 @@ border-radius: 2px;
   margin-bottom: 10px;
   position: relative;
   display: block;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 
@@ -1434,20 +1401,20 @@ border-radius: 2px;
 }
 
 .faq-title::before {  
-  width: 5px;
+  width: 8px;
   background-color: #111;
   left: 49.6%;
   transform: translate(-120%);
 }
 .faq-title::after {
-  width: 18px;
-  background-color: #055160;
+  width: 21px;
+  background-color: #3b7080;
   left: 49.6%;
 }
 
 .faq-subtitle {
   color: #1a1a1a;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 40px;
   text-align: center;
@@ -1458,6 +1425,9 @@ border-radius: 2px;
   width: 50%;
   margin: 0 auto;
   padding: 20px 0;
+}
+.faq-item.no-border {
+  border-bottom: none; /* removes grey line below last question */
 }
 /* Remove default disclosure triangle */
 summary::-webkit-details-marker {
